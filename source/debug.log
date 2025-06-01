@@ -1,0 +1,3 @@
+[0223/214409.677:ERROR:crash_report_database_win.cc(580)] CreateDirectory C:\Users\Public\Documents\Google\Chrome: Impossibile trovare il percorso specificato. (0x3)
+[0223/214409.681:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: Pipe terminata. (0x6D)
+[0223/214409.682:ERROR:crash_report_database_win.cc(580)] CreateDirectory C:\Users\Public\Documents\Google\Chrome: Impossibile trovare il percorso specificato. (0x3)

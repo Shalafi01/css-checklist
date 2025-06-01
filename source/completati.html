@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title> Checklist </title>
+  <link rel="stylesheet" href="style.css">
+</head>  
+
+<body>
+  <div id="sidebar" onmouseover="apriMenu()" onmouseleave="chiudiMenu()">    
+    <a href="index.html">Promemoria</a>
+    <a href="#" class="active">Completati</a>
+    <a href="#" id="dark" onclick="darkmode()">Dark mode: off</a>
+    <a href="info.html">Informazioni</a>
+    <a href="#" onclick="clean()">Rimuovi tutto</a>
+  </div>
+
+  <div id="menu" onmouseover="apriMenu()" onmouseleave="chiudiMenu()" onclick="gestioneMenu()">&#9776;</div>  
+
+  <div id="main"> 
+    <div id="header" style="padding-bottom: 69px;">   
+      <p id="check"> CHECKLIST - COMPLETATI</p>
+    </div>
+
+    <ul class="list" id="list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> 

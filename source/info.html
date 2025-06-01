@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title> Checklist </title>
+  <link rel="stylesheet" href="style.css">
+</head>  
+
+<body>
+  <div id="sidebar" onmouseover="apriMenu()" onmouseleave="chiudiMenu()">    
+    <a href="index.html">Promemoria</a>
+    <a href="completati.html">Completati</a>
+    <a href="#" id="dark" onclick="darkmode()">Dark mode: off</a>
+    <a href="#" class="active">Informazioni</a>
+    <a href="#" onclick="clean()">Rimuovi tutto</a>
+  </div>
+
+  <div id="menu" onmouseover="apriMenu()" onmouseleave="chiudiMenu()" onclick="gestioneMenu()">&#9776;</div>  
+
+  <div id="main"> 
+    <div id="header" style="padding-bottom: 69px;">   
+      <p id="check"> CHECKLIST - INFORMAZIONI</p>
+    </div>
+
+    <center style="font-size: 28; font-weight: bold;"> DOCUMENTAZIONE - CENNI  </center> <br/> <br/>
+  
+  <div style="padding: 12px 8px 12px 40px; text-align: justify; width: 60%; margin-left: 16%;">
+
+    PROMEMORIA <br/>
+    I promemoria inseriti sono salvati in localStorage, in modo che rimangano salvati anche chiundendo il browser o ricaricando la pagina. 
+    All'apertura della pagina infatti viene eseguita in automatico una funzione che legge il numero di note ed il loro contenuto, ricreandole 
+    una a una. Una volta spuntate le note verranno spostate nella pagina "Completati".<br/><br/>
+    INSERIMENTO <br/>
+    Inserito il promoria si può premere il tasto aggiungi o premere direttamente il tasto enter per inserire e automaticamente salvare la nota nel
+    localStorage. Vengono quindi anche salvate la data e l'ora attuale.<br/><br/>
+    COMPLETATI <br/>
+    In questa pagina vengono spostate le note completate, da qui è anche possibile eliminarle. All'inizio viene richiamato lo stesso metodo per 
+    inizializzare i promemoria. Leggendo il nome della pagina il metodo sa quali note caricare, se quelle quelle completate o quella ancora da completare. <br/><br/>
+    DARK MODE  <br/>
+    Cambia i colori del sito, modificando i valori di style di ogni elemento sul display. L'impostazione e la scritta on/off sono anch'esse salvate in localStorage. <br/><br/>
+    RIMUOVI TUTTO <br/>
+    Reinizializza tutte le impostazioni dell'utente pulendo localStorage. Affinché i cambiamenti abbiano effetto viene anche ricaricata la pagina. <br/><br/>
+    SIDEBAR <br/>
+    La barra laterale viene gestita da tre metodi : apriMenu, chiudiMenu e gestioneMenu. I primi due sono chiamati tramite gli eventi onmouseover e onmouseleave
+    mentre il terzo viene chiamato dal tasto &#9776; nell'angolo, che permette di fissare il menu in modo che sia sempre aperto. Tale impostazione viene salvata in localStorage
+    e si mantiene tra le pagine.
+  
+  </div>  
+
+  <script src="script.js"></script>
+</body>
+</html> 
