@@ -1,4 +1,4 @@
-# CSS Checklist
+# JS Checklist
 
 **Live Site:** [tomasoni-checklist.infinityfreeapp.com](https://tomasoni-checklist.infinityfreeapp.com)
 
