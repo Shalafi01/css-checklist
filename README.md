@@ -48,3 +48,6 @@ It supports dark mode, a sidebar menu, and a page for completed items.
 - This preference is saved in `localStorage` and maintained between pages.
 
 ## Screenshot
+<img src="img/screenshot_1.png" alt="Contacts App Screenshot" style="width: 700px;"/>
+
+<img src="img/screenshot_2.png" alt="Contacts App Screenshot" style="width: 700px;"/>
